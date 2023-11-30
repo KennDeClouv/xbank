@@ -1,0 +1,32 @@
+.n::after {
+    content: "";
+    display: block;
+    border: #F2994A 2px solid;
+    border-radius: 10px;
+    width: 100%;
+    transition: all .4s ease-in-out;
+    margin: auto;
+    margin-top: 0.6em;
+    transition: .5s ease;
+}
+
+.linkBody {
+    display: none;
+}
+
+.card:hover .overlay{
+    height: 45px;
+}
+
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #FFAD33;
+    overflow: hidden;
+    border-radius: 5px;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
