@@ -2,10 +2,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>X BANK | Job Finder</title>
-
-    <!-- BOOTSTRAP CSS CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- FONT AWESOME  CDN-->
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-solid.css">
@@ -17,13 +13,17 @@
     <link rel="stylesheet" href="../assets/css/style.css">
     <!-- SWIPER JS CSS CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!-- BOOTSTRAP CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
 <body class="overflow-x-hidden">
     <!-- NAVBAR -->
     <header>
         <nav class="navbar navbar-expand-lg position-fixed w-100 fixed-top bg-dark"
-            style="height: 10vh;transition: all .5s ease;">
+            style=" transition: all .5s ease;">
             <div class="container px-4 ">
                 <!-- NAVBAR BRAND-->
                 <a class="navbar-brand d-flex" href="#">
@@ -75,15 +75,15 @@
                         <ul class="navbar-nav gap-3 d-flex fs-6 align-items-center w-100">
                             <!-- NAVBAR LINKS -->
                             <li class="nav-item ms-auto ">
-                                <a class="nav-link text-warning" href="#">Beranda</a>
+                                <a class="nav-link text-light" href="../">Beranda</a>
                             </li>
-                            <li class="nav-item  ms-lg-0">
-                                <a class="nav-link text-light" href="#daftarpekerjaan">Daftar Pekerjaan</a>
+                            <li class="nav-item ms-auto ms-lg-0">
+                                <a class="nav-link text-warning" href="#">Daftar Pekerjaan</a>
                             </li>
-                            <li class="nav-item ms-lg-0">
-                                <a class="nav-link text-light" href="#profil">Profil</a>
+                            <li class="nav-item ms-auto ms-lg-0">
+                                <a class="nav-link text-light" href="../listjob/">Profil</a>
                             </li>
-                            <li class="nav-item ms-lg-0">
+                            <li class="nav-item ms-auto ms-lg-0">
                                 <a class="nav-link text-light" href="#logout">Logout</a>
                             </li>
 
@@ -118,7 +118,7 @@
         <div class="container">
             <div class="row mt-5">
                 <!-- FILTER -->
-                <div class="col-3">
+                <div class="col-12 col-md-3">
                     <div class="border rounded-2 py-3 px-4">
                         <h4>Filter</h4>
                         <form action="">
@@ -215,7 +215,7 @@
                     </div>
                 </div>
                 <!-- LOWONGAN -->
-                <div class="col">
+                <div class="col-12 col-md-9 mt-4 mt-md-0">
                     <!-- LOWONGAN TITLE -->
                     <div class="row">
                         <div class="col">
@@ -237,7 +237,7 @@
                     </div>
                     <!-- LOWONGAN -->
                     <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
+                        <div class="swiper-wrapper mb-5">
                             <!-- LOWONGAN PER SLIDE -->
                             <div class="swiper-slide">
                                 <!-- LOWONGAN PER CARD -->
@@ -490,257 +490,759 @@
                                     </div>
                                 </div>
                             </div>
-                                <div class="swiper-slide">
-                                    <!-- LOWONGAN PER CARD -->
-                                    <div class="border border-secondary-subtle rounded-3 mt-4">
-                                        <div class="row px-4 py-3">
-                                            <!-- LOWONGAN CARD IMG -->
-                                            <div class="col-12 col-md-2 d-flex">
-                                                <img src="../assets/img/metalogo.png" alt="" class="mx-0 mx-md-auto mt-3"
-                                                    style="width: 80px; height: 80px;">
-                                            </div>
-                                            <div class="col-12 col-md-10">
-                                                <!-- LOWONGAN CARD TITLE -->
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <p class="text-danger fw-medium m-0">Syabab Studio</p>
-                                                        <h3>Junior Programmer</h3>
-                                                    </div>
-                                                    <div class="col text-end">
-                                                        <div class="btn btn-warning text-light">Apply Now</div>
-                                                    </div>
-                                                </div>
-                                                <!-- LOWONGAN CARD DESC -->
-                                                <div class="row mt-3 align-items-center text-secondary">
-                                                    <!-- LOKASI -->
-                                                    <div class="col-auto d-flex">
-                                                        <i class="fa-regular fa-location-dot me-3"></i>
-                                                        <p class="m-0">Malang Kota</p>
-                                                    </div>
-                                                    <!-- LOKASI -->
-                                                    <div class="col-auto d-flex">
-                                                        <i class="fa-regular fa-clock me-3"></i>
-                                                        <p class="m-0">Full time</p>
-                                                    </div>
-                                                    <!-- LOKASI -->
-                                                    <div class="col-auto d-flex">
-                                                        <i class="fa-regular fa-location-dot me-3"></i>
-                                                        <p class="m-0">4-5 Juta</p>
-                                                    </div>
-                                                    <!-- LOKASI -->
-                                                    <div class="col d-flex">
-                                                        <i class="fa-regular fa-calendar me-3"></i>
-                                                        <p class="m-0">12 Desember 2023</p>
-                                                    </div>
-                                                </div>
-                                                <p class="text-secondary mt-3">Kami mencari talent X Bank yang bisa bahasa
-                                                    pemrograman PHP dan
-                                                    mengerjakan beberapa projek aplikasi syariah. Pekerjaan bisa dihandle
-                                                    secara remote dan kami akan memberikan mentor khusus untuk anda yang
-                                                    ingin mencoba tantangan ini.</p>
-                                            </div>
+                            <div class="swiper-slide">
+                                <!-- LOWONGAN PER CARD -->
+                                <div class="border border-secondary-subtle rounded-3 mt-4">
+                                    <div class="row px-4 py-3">
+                                        <!-- LOWONGAN CARD IMG -->
+                                        <div class="col-12 col-md-2 d-flex">
+                                            <img src="../assets/img/metalogo.png" alt="" class="mx-0 mx-md-auto mt-3"
+                                                style="width: 80px; height: 80px;">
                                         </div>
-                                    </div>
-                                    <!-- LOWONGAN PER CARD -->
-                                    <div class="border border-secondary-subtle rounded-3 mt-4">
-                                        <div class="row px-4 py-3">
-                                            <!-- LOWONGAN CARD IMG -->
-                                            <div class="col-12 col-md-2 d-flex">
-                                                <img src="../assets/img/sajinow.png" alt="" class="mx-0 mx-md-auto mt-3"
-                                                    style="width: 80px; height: 80px;">
-                                            </div>
-                                            <div class="col-12 col-md-10">
-                                                <!-- LOWONGAN CARD TITLE -->
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <p class="text-danger fw-medium m-0">Saji Now</p>
-                                                        <h3>Accounting</h3>
-                                                    </div>
-                                                    <div class="col text-end">
-                                                        <div class="btn btn-warning text-light">Apply Now</div>
-                                                    </div>
+                                        <div class="col-12 col-md-10">
+                                            <!-- LOWONGAN CARD TITLE -->
+                                            <div class="row">
+                                                <div class="col">
+                                                    <p class="text-danger fw-medium m-0">Syabab Studio</p>
+                                                    <h3>Junior Programmer</h3>
                                                 </div>
-                                                <!-- LOWONGAN CARD DESC -->
-                                                <div class="row mt-3 align-items-center text-secondary">
-                                                    <!-- LOKASI -->
-                                                    <div class="col-auto d-flex">
-                                                        <i class="fa-regular fa-location-dot me-3"></i>
-                                                        <p class="m-0">Yogyakarta</p>
-                                                    </div>
-                                                    <!-- LOKASI -->
-                                                    <div class="col-auto d-flex">
-                                                        <i class="fa-regular fa-clock me-3"></i>
-                                                        <p class="m-0">Full time</p>
-                                                    </div>
-                                                    <!-- LOKASI -->
-                                                    <div class="col-auto d-flex">
-                                                        <i class="fa-regular fa-location-dot me-3"></i>
-                                                        <p class="m-0">2-3 Juta</p>
-                                                    </div>
-                                                    <!-- LOKASI -->
-                                                    <div class="col d-flex">
-                                                        <i class="fa-regular fa-calendar me-3"></i>
-                                                        <p class="m-0">12 Desember 2023</p>
-                                                    </div>
+                                                <div class="col text-end">
+                                                    <div class="btn btn-warning text-light">Apply Now</div>
                                                 </div>
-                                                <p class="text-secondary mt-3">Kami mencari talent X Bank yang bisa bahasa
-                                                    pemrograman PHP dan
-                                                    mengerjakan beberapa projek aplikasi syariah. Pekerjaan bisa dihandle
-                                                    secara remote dan kami akan memberikan mentor khusus untuk anda yang
-                                                    ingin mencoba tantangan ini.</p>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <!-- LOWONGAN PER CARD -->
-                                    <div class="border border-secondary-subtle rounded-3 mt-4">
-                                        <div class="row px-4 py-3">
-                                            <!-- LOWONGAN CARD IMG -->
-                                            <div class="col-12 col-md-2 d-flex">
-                                                <img src="../assets/img/music.png" alt="" class="mx-0 mx-md-auto mt-3"
-                                                    style="width: 80px; height: 80px;">
-                                            </div>
-                                            <div class="col-12 col-md-10">
-                                                <!-- LOWONGAN CARD TITLE -->
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <p class="text-danger fw-medium m-0">Creative Art</p>
-                                                        <h3>Music Composer</h3>
-                                                    </div>
-                                                    <div class="col text-end">
-                                                        <div class="btn btn-warning text-light">Apply Now</div>
-                                                    </div>
+                                            <!-- LOWONGAN CARD DESC -->
+                                            <div class="row mt-3 align-items-center text-secondary">
+                                                <!-- LOKASI -->
+                                                <div class="col-auto d-flex">
+                                                    <i class="fa-regular fa-location-dot me-3"></i>
+                                                    <p class="m-0">Malang Kota</p>
                                                 </div>
-                                                <!-- LOWONGAN CARD DESC -->
-                                                <div class="row mt-3 align-items-center text-secondary">
-                                                    <!-- LOKASI -->
-                                                    <div class="col-auto d-flex">
-                                                        <i class="fa-regular fa-location-dot me-3"></i>
-                                                        <p class="m-0">Malang Kota</p>
-                                                    </div>
-                                                    <!-- LOKASI -->
-                                                    <div class="col-auto d-flex">
-                                                        <i class="fa-regular fa-clock me-3"></i>
-                                                        <p class="m-0">Full time</p>
-                                                    </div>
-                                                    <!-- LOKASI -->
-                                                    <div class="col-auto d-flex">
-                                                        <i class="fa-regular fa-location-dot me-3"></i>
-                                                        <p class="m-0">4-5 Juta</p>
-                                                    </div>
-                                                    <!-- LOKASI -->
-                                                    <div class="col d-flex">
-                                                        <i class="fa-regular fa-calendar me-3"></i>
-                                                        <p class="m-0">12 Desember 2023</p>
-                                                    </div>
+                                                <!-- LOKASI -->
+                                                <div class="col-auto d-flex">
+                                                    <i class="fa-regular fa-clock me-3"></i>
+                                                    <p class="m-0">Full time</p>
                                                 </div>
-                                                <p class="text-secondary mt-3">Kami mencari talent X Bank yang bisa bahasa
-                                                    pemrograman PHP dan
-                                                    mengerjakan beberapa projek aplikasi syariah. Pekerjaan bisa dihandle
-                                                    secara remote dan kami akan memberikan mentor khusus untuk anda yang
-                                                    ingin mencoba tantangan ini.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- LOWONGAN PER CARD -->
-                                    <div class="border border-secondary-subtle rounded-3 mt-4">
-                                        <div class="row px-4 py-3">
-                                            <!-- LOWONGAN CARD IMG -->
-                                            <div class="col-12 col-md-2 d-flex">
-                                                <img src="../assets/img/edge.png" alt="" class="mx-0 mx-md-auto mt-3"
-                                                    style="width: 80px; height: 80px;">
-                                            </div>
-                                            <div class="col-12 col-md-10">
-                                                <!-- LOWONGAN CARD TITLE -->
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <p class="text-danger fw-medium m-0">PT Berkah till Hijrah</p>
-                                                        <h3>Supervisor</h3>
-                                                    </div>
-                                                    <div class="col text-end">
-                                                        <div class="btn btn-warning text-light">Apply Now</div>
-                                                    </div>
+                                                <!-- LOKASI -->
+                                                <div class="col-auto d-flex">
+                                                    <i class="fa-regular fa-location-dot me-3"></i>
+                                                    <p class="m-0">4-5 Juta</p>
                                                 </div>
-                                                <!-- LOWONGAN CARD DESC -->
-                                                <div class="row mt-3 align-items-center text-secondary">
-                                                    <!-- LOKASI -->
-                                                    <div class="col-auto d-flex">
-                                                        <i class="fa-regular fa-location-dot me-3"></i>
-                                                        <p class="m-0">Malang Kota</p>
-                                                    </div>
-                                                    <!-- LOKASI -->
-                                                    <div class="col-auto d-flex">
-                                                        <i class="fa-regular fa-clock me-3"></i>
-                                                        <p class="m-0">Full time</p>
-                                                    </div>
-                                                    <!-- LOKASI -->
-                                                    <div class="col-auto d-flex">
-                                                        <i class="fa-regular fa-location-dot me-3"></i>
-                                                        <p class="m-0">4-5 Juta</p>
-                                                    </div>
-                                                    <!-- LOKASI -->
-                                                    <div class="col d-flex">
-                                                        <i class="fa-regular fa-calendar me-3"></i>
-                                                        <p class="m-0">12 Desember 2023</p>
-                                                    </div>
+                                                <!-- LOKASI -->
+                                                <div class="col d-flex">
+                                                    <i class="fa-regular fa-calendar me-3"></i>
+                                                    <p class="m-0">12 Desember 2023</p>
                                                 </div>
-                                                <p class="text-secondary mt-3">Kami mencari talent X Bank yang bisa bahasa
-                                                    pemrograman PHP dan
-                                                    mengerjakan beberapa projek aplikasi syariah. Pekerjaan bisa dihandle
-                                                    secara remote dan kami akan memberikan mentor khusus untuk anda yang
-                                                    ingin mencoba tantangan ini.</p>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="border border-secondary-subtle rounded-3 mt-4">
-                                        <div class="row px-4 py-3">
-                                            <!-- LOWONGAN CARD IMG -->
-                                            <div class="col-12 col-md-2 d-flex">
-                                                <img src="../assets/img/office.png" alt="" class="mx-0 mx-md-auto mt-3"
-                                                    style="width: 80px; height: 80px;">
-                                            </div>
-                                            <div class="col-12 col-md-10">
-                                                <!-- LOWONGAN CARD TITLE -->
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <p class="text-danger fw-medium m-0">PT Anak Shaleh</p>
-                                                        <h3>Front Office</h3>
-                                                    </div>
-                                                    <div class="col text-end">
-                                                        <div class="btn btn-warning text-light">Apply Now</div>
-                                                    </div>
-                                                </div>
-                                                <!-- LOWONGAN CARD DESC -->
-                                                <div class="row mt-3 align-items-center text-secondary">
-                                                    <!-- LOKASI -->
-                                                    <div class="col-auto d-flex">
-                                                        <i class="fa-regular fa-location-dot me-3"></i>
-                                                        <p class="m-0">Malang Kota</p>
-                                                    </div>
-                                                    <!-- LOKASI -->
-                                                    <div class="col-auto d-flex">
-                                                        <i class="fa-regular fa-clock me-3"></i>
-                                                        <p class="m-0">Full time</p>
-                                                    </div>
-                                                    <!-- LOKASI -->
-                                                    <div class="col-auto d-flex">
-                                                        <i class="fa-regular fa-location-dot me-3"></i>
-                                                        <p class="m-0">4-5 Juta</p>
-                                                    </div>
-                                                    <!-- LOKASI -->
-                                                    <div class="col d-flex">
-                                                        <i class="fa-regular fa-calendar me-3"></i>
-                                                        <p class="m-0">12 Desember 2023</p>
-                                                    </div>
-                                                </div>
-                                                <p class="text-secondary mt-3">Kami mencari talent X Bank yang bisa bahasa
-                                                    pemrograman PHP dan
-                                                    mengerjakan beberapa projek aplikasi syariah. Pekerjaan bisa dihandle
-                                                    secara remote dan kami akan memberikan mentor khusus untuk anda yang
-                                                    ingin mencoba tantangan ini.</p>
-                                            </div>
+                                            <p class="text-secondary mt-3">Kami mencari talent X Bank yang bisa bahasa
+                                                pemrograman PHP dan
+                                                mengerjakan beberapa projek aplikasi syariah. Pekerjaan bisa dihandle
+                                                secara remote dan kami akan memberikan mentor khusus untuk anda yang
+                                                ingin mencoba tantangan ini.</p>
                                         </div>
                                     </div>
                                 </div>
+                                <!-- LOWONGAN PER CARD -->
+                                <div class="border border-secondary-subtle rounded-3 mt-4">
+                                    <div class="row px-4 py-3">
+                                        <!-- LOWONGAN CARD IMG -->
+                                        <div class="col-12 col-md-2 d-flex">
+                                            <img src="../assets/img/sajinow.png" alt="" class="mx-0 mx-md-auto mt-3"
+                                                style="width: 80px; height: 80px;">
+                                        </div>
+                                        <div class="col-12 col-md-10">
+                                            <!-- LOWONGAN CARD TITLE -->
+                                            <div class="row">
+                                                <div class="col">
+                                                    <p class="text-danger fw-medium m-0">Saji Now</p>
+                                                    <h3>Accounting</h3>
+                                                </div>
+                                                <div class="col text-end">
+                                                    <div class="btn btn-warning text-light">Apply Now</div>
+                                                </div>
+                                            </div>
+                                            <!-- LOWONGAN CARD DESC -->
+                                            <div class="row mt-3 align-items-center text-secondary">
+                                                <!-- LOKASI -->
+                                                <div class="col-auto d-flex">
+                                                    <i class="fa-regular fa-location-dot me-3"></i>
+                                                    <p class="m-0">Yogyakarta</p>
+                                                </div>
+                                                <!-- LOKASI -->
+                                                <div class="col-auto d-flex">
+                                                    <i class="fa-regular fa-clock me-3"></i>
+                                                    <p class="m-0">Full time</p>
+                                                </div>
+                                                <!-- LOKASI -->
+                                                <div class="col-auto d-flex">
+                                                    <i class="fa-regular fa-location-dot me-3"></i>
+                                                    <p class="m-0">2-3 Juta</p>
+                                                </div>
+                                                <!-- LOKASI -->
+                                                <div class="col d-flex">
+                                                    <i class="fa-regular fa-calendar me-3"></i>
+                                                    <p class="m-0">12 Desember 2023</p>
+                                                </div>
+                                            </div>
+                                            <p class="text-secondary mt-3">Kami mencari talent X Bank yang bisa bahasa
+                                                pemrograman PHP dan
+                                                mengerjakan beberapa projek aplikasi syariah. Pekerjaan bisa dihandle
+                                                secara remote dan kami akan memberikan mentor khusus untuk anda yang
+                                                ingin mencoba tantangan ini.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- LOWONGAN PER CARD -->
+                                <div class="border border-secondary-subtle rounded-3 mt-4">
+                                    <div class="row px-4 py-3">
+                                        <!-- LOWONGAN CARD IMG -->
+                                        <div class="col-12 col-md-2 d-flex">
+                                            <img src="../assets/img/music.png" alt="" class="mx-0 mx-md-auto mt-3"
+                                                style="width: 80px; height: 80px;">
+                                        </div>
+                                        <div class="col-12 col-md-10">
+                                            <!-- LOWONGAN CARD TITLE -->
+                                            <div class="row">
+                                                <div class="col">
+                                                    <p class="text-danger fw-medium m-0">Creative Art</p>
+                                                    <h3>Music Composer</h3>
+                                                </div>
+                                                <div class="col text-end">
+                                                    <div class="btn btn-warning text-light">Apply Now</div>
+                                                </div>
+                                            </div>
+                                            <!-- LOWONGAN CARD DESC -->
+                                            <div class="row mt-3 align-items-center text-secondary">
+                                                <!-- LOKASI -->
+                                                <div class="col-auto d-flex">
+                                                    <i class="fa-regular fa-location-dot me-3"></i>
+                                                    <p class="m-0">Malang Kota</p>
+                                                </div>
+                                                <!-- LOKASI -->
+                                                <div class="col-auto d-flex">
+                                                    <i class="fa-regular fa-clock me-3"></i>
+                                                    <p class="m-0">Full time</p>
+                                                </div>
+                                                <!-- LOKASI -->
+                                                <div class="col-auto d-flex">
+                                                    <i class="fa-regular fa-location-dot me-3"></i>
+                                                    <p class="m-0">4-5 Juta</p>
+                                                </div>
+                                                <!-- LOKASI -->
+                                                <div class="col d-flex">
+                                                    <i class="fa-regular fa-calendar me-3"></i>
+                                                    <p class="m-0">12 Desember 2023</p>
+                                                </div>
+                                            </div>
+                                            <p class="text-secondary mt-3">Kami mencari talent X Bank yang bisa bahasa
+                                                pemrograman PHP dan
+                                                mengerjakan beberapa projek aplikasi syariah. Pekerjaan bisa dihandle
+                                                secara remote dan kami akan memberikan mentor khusus untuk anda yang
+                                                ingin mencoba tantangan ini.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- LOWONGAN PER CARD -->
+                                <div class="border border-secondary-subtle rounded-3 mt-4">
+                                    <div class="row px-4 py-3">
+                                        <!-- LOWONGAN CARD IMG -->
+                                        <div class="col-12 col-md-2 d-flex">
+                                            <img src="../assets/img/edge.png" alt="" class="mx-0 mx-md-auto mt-3"
+                                                style="width: 80px; height: 80px;">
+                                        </div>
+                                        <div class="col-12 col-md-10">
+                                            <!-- LOWONGAN CARD TITLE -->
+                                            <div class="row">
+                                                <div class="col">
+                                                    <p class="text-danger fw-medium m-0">PT Berkah till Hijrah</p>
+                                                    <h3>Supervisor</h3>
+                                                </div>
+                                                <div class="col text-end">
+                                                    <div class="btn btn-warning text-light">Apply Now</div>
+                                                </div>
+                                            </div>
+                                            <!-- LOWONGAN CARD DESC -->
+                                            <div class="row mt-3 align-items-center text-secondary">
+                                                <!-- LOKASI -->
+                                                <div class="col-auto d-flex">
+                                                    <i class="fa-regular fa-location-dot me-3"></i>
+                                                    <p class="m-0">Malang Kota</p>
+                                                </div>
+                                                <!-- LOKASI -->
+                                                <div class="col-auto d-flex">
+                                                    <i class="fa-regular fa-clock me-3"></i>
+                                                    <p class="m-0">Full time</p>
+                                                </div>
+                                                <!-- LOKASI -->
+                                                <div class="col-auto d-flex">
+                                                    <i class="fa-regular fa-location-dot me-3"></i>
+                                                    <p class="m-0">4-5 Juta</p>
+                                                </div>
+                                                <!-- LOKASI -->
+                                                <div class="col d-flex">
+                                                    <i class="fa-regular fa-calendar me-3"></i>
+                                                    <p class="m-0">12 Desember 2023</p>
+                                                </div>
+                                            </div>
+                                            <p class="text-secondary mt-3">Kami mencari talent X Bank yang bisa bahasa
+                                                pemrograman PHP dan
+                                                mengerjakan beberapa projek aplikasi syariah. Pekerjaan bisa dihandle
+                                                secara remote dan kami akan memberikan mentor khusus untuk anda yang
+                                                ingin mencoba tantangan ini.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border border-secondary-subtle rounded-3 mt-4">
+                                    <div class="row px-4 py-3">
+                                        <!-- LOWONGAN CARD IMG -->
+                                        <div class="col-12 col-md-2 d-flex">
+                                            <img src="../assets/img/office.png" alt="" class="mx-0 mx-md-auto mt-3"
+                                                style="width: 80px; height: 80px;">
+                                        </div>
+                                        <div class="col-12 col-md-10">
+                                            <!-- LOWONGAN CARD TITLE -->
+                                            <div class="row">
+                                                <div class="col">
+                                                    <p class="text-danger fw-medium m-0">PT Anak Shaleh</p>
+                                                    <h3>Front Office</h3>
+                                                </div>
+                                                <div class="col text-end">
+                                                    <div class="btn btn-warning text-light">Apply Now</div>
+                                                </div>
+                                            </div>
+                                            <!-- LOWONGAN CARD DESC -->
+                                            <div class="row mt-3 align-items-center text-secondary">
+                                                <!-- LOKASI -->
+                                                <div class="col-auto d-flex">
+                                                    <i class="fa-regular fa-location-dot me-3"></i>
+                                                    <p class="m-0">Malang Kota</p>
+                                                </div>
+                                                <!-- LOKASI -->
+                                                <div class="col-auto d-flex">
+                                                    <i class="fa-regular fa-clock me-3"></i>
+                                                    <p class="m-0">Full time</p>
+                                                </div>
+                                                <!-- LOKASI -->
+                                                <div class="col-auto d-flex">
+                                                    <i class="fa-regular fa-location-dot me-3"></i>
+                                                    <p class="m-0">4-5 Juta</p>
+                                                </div>
+                                                <!-- LOKASI -->
+                                                <div class="col d-flex">
+                                                    <i class="fa-regular fa-calendar me-3"></i>
+                                                    <p class="m-0">12 Desember 2023</p>
+                                                </div>
+                                            </div>
+                                            <p class="text-secondary mt-3">Kami mencari talent X Bank yang bisa bahasa
+                                                pemrograman PHP dan
+                                                mengerjakan beberapa projek aplikasi syariah. Pekerjaan bisa dihandle
+                                                secara remote dan kami akan memberikan mentor khusus untuk anda yang
+                                                ingin mencoba tantangan ini.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <!-- LOWONGAN PER CARD -->
+                                <div class="border border-secondary-subtle rounded-3 mt-4">
+                                    <div class="row px-4 py-3">
+                                        <!-- LOWONGAN CARD IMG -->
+                                        <div class="col-12 col-md-2 d-flex">
+                                            <img src="../assets/img/metalogo.png" alt="" class="mx-0 mx-md-auto mt-3"
+                                                style="width: 80px; height: 80px;">
+                                        </div>
+                                        <div class="col-12 col-md-10">
+                                            <!-- LOWONGAN CARD TITLE -->
+                                            <div class="row">
+                                                <div class="col">
+                                                    <p class="text-danger fw-medium m-0">Syabab Studio</p>
+                                                    <h3>Junior Programmer</h3>
+                                                </div>
+                                                <div class="col text-end">
+                                                    <div class="btn btn-warning text-light">Apply Now</div>
+                                                </div>
+                                            </div>
+                                            <!-- LOWONGAN CARD DESC -->
+                                            <div class="row mt-3 align-items-center text-secondary">
+                                                <!-- LOKASI -->
+                                                <div class="col-auto d-flex">
+                                                    <i class="fa-regular fa-location-dot me-3"></i>
+                                                    <p class="m-0">Malang Kota</p>
+                                                </div>
+                                                <!-- LOKASI -->
+                                                <div class="col-auto d-flex">
+                                                    <i class="fa-regular fa-clock me-3"></i>
+                                                    <p class="m-0">Full time</p>
+                                                </div>
+                                                <!-- LOKASI -->
+                                                <div class="col-auto d-flex">
+                                                    <i class="fa-regular fa-location-dot me-3"></i>
+                                                    <p class="m-0">4-5 Juta</p>
+                                                </div>
+                                                <!-- LOKASI -->
+                                                <div class="col d-flex">
+                                                    <i class="fa-regular fa-calendar me-3"></i>
+                                                    <p class="m-0">12 Desember 2023</p>
+                                                </div>
+                                            </div>
+                                            <p class="text-secondary mt-3">Kami mencari talent X Bank yang bisa bahasa
+                                                pemrograman PHP dan
+                                                mengerjakan beberapa projek aplikasi syariah. Pekerjaan bisa dihandle
+                                                secara remote dan kami akan memberikan mentor khusus untuk anda yang
+                                                ingin mencoba tantangan ini.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- LOWONGAN PER CARD -->
+                                <div class="border border-secondary-subtle rounded-3 mt-4">
+                                    <div class="row px-4 py-3">
+                                        <!-- LOWONGAN CARD IMG -->
+                                        <div class="col-12 col-md-2 d-flex">
+                                            <img src="../assets/img/sajinow.png" alt="" class="mx-0 mx-md-auto mt-3"
+                                                style="width: 80px; height: 80px;">
+                                        </div>
+                                        <div class="col-12 col-md-10">
+                                            <!-- LOWONGAN CARD TITLE -->
+                                            <div class="row">
+                                                <div class="col">
+                                                    <p class="text-danger fw-medium m-0">Saji Now</p>
+                                                    <h3>Accounting</h3>
+                                                </div>
+                                                <div class="col text-end">
+                                                    <div class="btn btn-warning text-light">Apply Now</div>
+                                                </div>
+                                            </div>
+                                            <!-- LOWONGAN CARD DESC -->
+                                            <div class="row mt-3 align-items-center text-secondary">
+                                                <!-- LOKASI -->
+                                                <div class="col-auto d-flex">
+                                                    <i class="fa-regular fa-location-dot me-3"></i>
+                                                    <p class="m-0">Yogyakarta</p>
+                                                </div>
+                                                <!-- LOKASI -->
+                                                <div class="col-auto d-flex">
+                                                    <i class="fa-regular fa-clock me-3"></i>
+                                                    <p class="m-0">Full time</p>
+                                                </div>
+                                                <!-- LOKASI -->
+                                                <div class="col-auto d-flex">
+                                                    <i class="fa-regular fa-location-dot me-3"></i>
+                                                    <p class="m-0">2-3 Juta</p>
+                                                </div>
+                                                <!-- LOKASI -->
+                                                <div class="col d-flex">
+                                                    <i class="fa-regular fa-calendar me-3"></i>
+                                                    <p class="m-0">12 Desember 2023</p>
+                                                </div>
+                                            </div>
+                                            <p class="text-secondary mt-3">Kami mencari talent X Bank yang bisa bahasa
+                                                pemrograman PHP dan
+                                                mengerjakan beberapa projek aplikasi syariah. Pekerjaan bisa dihandle
+                                                secara remote dan kami akan memberikan mentor khusus untuk anda yang
+                                                ingin mencoba tantangan ini.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- LOWONGAN PER CARD -->
+                                <div class="border border-secondary-subtle rounded-3 mt-4">
+                                    <div class="row px-4 py-3">
+                                        <!-- LOWONGAN CARD IMG -->
+                                        <div class="col-12 col-md-2 d-flex">
+                                            <img src="../assets/img/music.png" alt="" class="mx-0 mx-md-auto mt-3"
+                                                style="width: 80px; height: 80px;">
+                                        </div>
+                                        <div class="col-12 col-md-10">
+                                            <!-- LOWONGAN CARD TITLE -->
+                                            <div class="row">
+                                                <div class="col">
+                                                    <p class="text-danger fw-medium m-0">Creative Art</p>
+                                                    <h3>Music Composer</h3>
+                                                </div>
+                                                <div class="col text-end">
+                                                    <div class="btn btn-warning text-light">Apply Now</div>
+                                                </div>
+                                            </div>
+                                            <!-- LOWONGAN CARD DESC -->
+                                            <div class="row mt-3 align-items-center text-secondary">
+                                                <!-- LOKASI -->
+                                                <div class="col-auto d-flex">
+                                                    <i class="fa-regular fa-location-dot me-3"></i>
+                                                    <p class="m-0">Malang Kota</p>
+                                                </div>
+                                                <!-- LOKASI -->
+                                                <div class="col-auto d-flex">
+                                                    <i class="fa-regular fa-clock me-3"></i>
+                                                    <p class="m-0">Full time</p>
+                                                </div>
+                                                <!-- LOKASI -->
+                                                <div class="col-auto d-flex">
+                                                    <i class="fa-regular fa-location-dot me-3"></i>
+                                                    <p class="m-0">4-5 Juta</p>
+                                                </div>
+                                                <!-- LOKASI -->
+                                                <div class="col d-flex">
+                                                    <i class="fa-regular fa-calendar me-3"></i>
+                                                    <p class="m-0">12 Desember 2023</p>
+                                                </div>
+                                            </div>
+                                            <p class="text-secondary mt-3">Kami mencari talent X Bank yang bisa bahasa
+                                                pemrograman PHP dan
+                                                mengerjakan beberapa projek aplikasi syariah. Pekerjaan bisa dihandle
+                                                secara remote dan kami akan memberikan mentor khusus untuk anda yang
+                                                ingin mencoba tantangan ini.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- LOWONGAN PER CARD -->
+                                <div class="border border-secondary-subtle rounded-3 mt-4">
+                                    <div class="row px-4 py-3">
+                                        <!-- LOWONGAN CARD IMG -->
+                                        <div class="col-12 col-md-2 d-flex">
+                                            <img src="../assets/img/edge.png" alt="" class="mx-0 mx-md-auto mt-3"
+                                                style="width: 80px; height: 80px;">
+                                        </div>
+                                        <div class="col-12 col-md-10">
+                                            <!-- LOWONGAN CARD TITLE -->
+                                            <div class="row">
+                                                <div class="col">
+                                                    <p class="text-danger fw-medium m-0">PT Berkah till Hijrah</p>
+                                                    <h3>Supervisor</h3>
+                                                </div>
+                                                <div class="col text-end">
+                                                    <div class="btn btn-warning text-light">Apply Now</div>
+                                                </div>
+                                            </div>
+                                            <!-- LOWONGAN CARD DESC -->
+                                            <div class="row mt-3 align-items-center text-secondary">
+                                                <!-- LOKASI -->
+                                                <div class="col-auto d-flex">
+                                                    <i class="fa-regular fa-location-dot me-3"></i>
+                                                    <p class="m-0">Malang Kota</p>
+                                                </div>
+                                                <!-- LOKASI -->
+                                                <div class="col-auto d-flex">
+                                                    <i class="fa-regular fa-clock me-3"></i>
+                                                    <p class="m-0">Full time</p>
+                                                </div>
+                                                <!-- LOKASI -->
+                                                <div class="col-auto d-flex">
+                                                    <i class="fa-regular fa-location-dot me-3"></i>
+                                                    <p class="m-0">4-5 Juta</p>
+                                                </div>
+                                                <!-- LOKASI -->
+                                                <div class="col d-flex">
+                                                    <i class="fa-regular fa-calendar me-3"></i>
+                                                    <p class="m-0">12 Desember 2023</p>
+                                                </div>
+                                            </div>
+                                            <p class="text-secondary mt-3">Kami mencari talent X Bank yang bisa bahasa
+                                                pemrograman PHP dan
+                                                mengerjakan beberapa projek aplikasi syariah. Pekerjaan bisa dihandle
+                                                secara remote dan kami akan memberikan mentor khusus untuk anda yang
+                                                ingin mencoba tantangan ini.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border border-secondary-subtle rounded-3 mt-4">
+                                    <div class="row px-4 py-3">
+                                        <!-- LOWONGAN CARD IMG -->
+                                        <div class="col-12 col-md-2 d-flex">
+                                            <img src="../assets/img/office.png" alt="" class="mx-0 mx-md-auto mt-3"
+                                                style="width: 80px; height: 80px;">
+                                        </div>
+                                        <div class="col-12 col-md-10">
+                                            <!-- LOWONGAN CARD TITLE -->
+                                            <div class="row">
+                                                <div class="col">
+                                                    <p class="text-danger fw-medium m-0">PT Anak Shaleh</p>
+                                                    <h3>Front Office</h3>
+                                                </div>
+                                                <div class="col text-end">
+                                                    <div class="btn btn-warning text-light">Apply Now</div>
+                                                </div>
+                                            </div>
+                                            <!-- LOWONGAN CARD DESC -->
+                                            <div class="row mt-3 align-items-center text-secondary">
+                                                <!-- LOKASI -->
+                                                <div class="col-auto d-flex">
+                                                    <i class="fa-regular fa-location-dot me-3"></i>
+                                                    <p class="m-0">Malang Kota</p>
+                                                </div>
+                                                <!-- LOKASI -->
+                                                <div class="col-auto d-flex">
+                                                    <i class="fa-regular fa-clock me-3"></i>
+                                                    <p class="m-0">Full time</p>
+                                                </div>
+                                                <!-- LOKASI -->
+                                                <div class="col-auto d-flex">
+                                                    <i class="fa-regular fa-location-dot me-3"></i>
+                                                    <p class="m-0">4-5 Juta</p>
+                                                </div>
+                                                <!-- LOKASI -->
+                                                <div class="col d-flex">
+                                                    <i class="fa-regular fa-calendar me-3"></i>
+                                                    <p class="m-0">12 Desember 2023</p>
+                                                </div>
+                                            </div>
+                                            <p class="text-secondary mt-3">Kami mencari talent X Bank yang bisa bahasa
+                                                pemrograman PHP dan
+                                                mengerjakan beberapa projek aplikasi syariah. Pekerjaan bisa dihandle
+                                                secara remote dan kami akan memberikan mentor khusus untuk anda yang
+                                                ingin mencoba tantangan ini.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <!-- LOWONGAN PER CARD -->
+                                <div class="border border-secondary-subtle rounded-3 mt-4">
+                                    <div class="row px-4 py-3">
+                                        <!-- LOWONGAN CARD IMG -->
+                                        <div class="col-12 col-md-2 d-flex">
+                                            <img src="../assets/img/metalogo.png" alt="" class="mx-0 mx-md-auto mt-3"
+                                                style="width: 80px; height: 80px;">
+                                        </div>
+                                        <div class="col-12 col-md-10">
+                                            <!-- LOWONGAN CARD TITLE -->
+                                            <div class="row">
+                                                <div class="col">
+                                                    <p class="text-danger fw-medium m-0">Syabab Studio</p>
+                                                    <h3>Junior Programmer</h3>
+                                                </div>
+                                                <div class="col text-end">
+                                                    <div class="btn btn-warning text-light">Apply Now</div>
+                                                </div>
+                                            </div>
+                                            <!-- LOWONGAN CARD DESC -->
+                                            <div class="row mt-3 align-items-center text-secondary">
+                                                <!-- LOKASI -->
+                                                <div class="col-auto d-flex">
+                                                    <i class="fa-regular fa-location-dot me-3"></i>
+                                                    <p class="m-0">Malang Kota</p>
+                                                </div>
+                                                <!-- LOKASI -->
+                                                <div class="col-auto d-flex">
+                                                    <i class="fa-regular fa-clock me-3"></i>
+                                                    <p class="m-0">Full time</p>
+                                                </div>
+                                                <!-- LOKASI -->
+                                                <div class="col-auto d-flex">
+                                                    <i class="fa-regular fa-location-dot me-3"></i>
+                                                    <p class="m-0">4-5 Juta</p>
+                                                </div>
+                                                <!-- LOKASI -->
+                                                <div class="col d-flex">
+                                                    <i class="fa-regular fa-calendar me-3"></i>
+                                                    <p class="m-0">12 Desember 2023</p>
+                                                </div>
+                                            </div>
+                                            <p class="text-secondary mt-3">Kami mencari talent X Bank yang bisa bahasa
+                                                pemrograman PHP dan
+                                                mengerjakan beberapa projek aplikasi syariah. Pekerjaan bisa dihandle
+                                                secara remote dan kami akan memberikan mentor khusus untuk anda yang
+                                                ingin mencoba tantangan ini.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- LOWONGAN PER CARD -->
+                                <div class="border border-secondary-subtle rounded-3 mt-4">
+                                    <div class="row px-4 py-3">
+                                        <!-- LOWONGAN CARD IMG -->
+                                        <div class="col-12 col-md-2 d-flex">
+                                            <img src="../assets/img/sajinow.png" alt="" class="mx-0 mx-md-auto mt-3"
+                                                style="width: 80px; height: 80px;">
+                                        </div>
+                                        <div class="col-12 col-md-10">
+                                            <!-- LOWONGAN CARD TITLE -->
+                                            <div class="row">
+                                                <div class="col">
+                                                    <p class="text-danger fw-medium m-0">Saji Now</p>
+                                                    <h3>Accounting</h3>
+                                                </div>
+                                                <div class="col text-end">
+                                                    <div class="btn btn-warning text-light">Apply Now</div>
+                                                </div>
+                                            </div>
+                                            <!-- LOWONGAN CARD DESC -->
+                                            <div class="row mt-3 align-items-center text-secondary">
+                                                <!-- LOKASI -->
+                                                <div class="col-auto d-flex">
+                                                    <i class="fa-regular fa-location-dot me-3"></i>
+                                                    <p class="m-0">Yogyakarta</p>
+                                                </div>
+                                                <!-- LOKASI -->
+                                                <div class="col-auto d-flex">
+                                                    <i class="fa-regular fa-clock me-3"></i>
+                                                    <p class="m-0">Full time</p>
+                                                </div>
+                                                <!-- LOKASI -->
+                                                <div class="col-auto d-flex">
+                                                    <i class="fa-regular fa-location-dot me-3"></i>
+                                                    <p class="m-0">2-3 Juta</p>
+                                                </div>
+                                                <!-- LOKASI -->
+                                                <div class="col d-flex">
+                                                    <i class="fa-regular fa-calendar me-3"></i>
+                                                    <p class="m-0">12 Desember 2023</p>
+                                                </div>
+                                            </div>
+                                            <p class="text-secondary mt-3">Kami mencari talent X Bank yang bisa bahasa
+                                                pemrograman PHP dan
+                                                mengerjakan beberapa projek aplikasi syariah. Pekerjaan bisa dihandle
+                                                secara remote dan kami akan memberikan mentor khusus untuk anda yang
+                                                ingin mencoba tantangan ini.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- LOWONGAN PER CARD -->
+                                <div class="border border-secondary-subtle rounded-3 mt-4">
+                                    <div class="row px-4 py-3">
+                                        <!-- LOWONGAN CARD IMG -->
+                                        <div class="col-12 col-md-2 d-flex">
+                                            <img src="../assets/img/music.png" alt="" class="mx-0 mx-md-auto mt-3"
+                                                style="width: 80px; height: 80px;">
+                                        </div>
+                                        <div class="col-12 col-md-10">
+                                            <!-- LOWONGAN CARD TITLE -->
+                                            <div class="row">
+                                                <div class="col">
+                                                    <p class="text-danger fw-medium m-0">Creative Art</p>
+                                                    <h3>Music Composer</h3>
+                                                </div>
+                                                <div class="col text-end">
+                                                    <div class="btn btn-warning text-light">Apply Now</div>
+                                                </div>
+                                            </div>
+                                            <!-- LOWONGAN CARD DESC -->
+                                            <div class="row mt-3 align-items-center text-secondary">
+                                                <!-- LOKASI -->
+                                                <div class="col-auto d-flex">
+                                                    <i class="fa-regular fa-location-dot me-3"></i>
+                                                    <p class="m-0">Malang Kota</p>
+                                                </div>
+                                                <!-- LOKASI -->
+                                                <div class="col-auto d-flex">
+                                                    <i class="fa-regular fa-clock me-3"></i>
+                                                    <p class="m-0">Full time</p>
+                                                </div>
+                                                <!-- LOKASI -->
+                                                <div class="col-auto d-flex">
+                                                    <i class="fa-regular fa-location-dot me-3"></i>
+                                                    <p class="m-0">4-5 Juta</p>
+                                                </div>
+                                                <!-- LOKASI -->
+                                                <div class="col d-flex">
+                                                    <i class="fa-regular fa-calendar me-3"></i>
+                                                    <p class="m-0">12 Desember 2023</p>
+                                                </div>
+                                            </div>
+                                            <p class="text-secondary mt-3">Kami mencari talent X Bank yang bisa bahasa
+                                                pemrograman PHP dan
+                                                mengerjakan beberapa projek aplikasi syariah. Pekerjaan bisa dihandle
+                                                secara remote dan kami akan memberikan mentor khusus untuk anda yang
+                                                ingin mencoba tantangan ini.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- LOWONGAN PER CARD -->
+                                <div class="border border-secondary-subtle rounded-3 mt-4">
+                                    <div class="row px-4 py-3">
+                                        <!-- LOWONGAN CARD IMG -->
+                                        <div class="col-12 col-md-2 d-flex">
+                                            <img src="../assets/img/edge.png" alt="" class="mx-0 mx-md-auto mt-3"
+                                                style="width: 80px; height: 80px;">
+                                        </div>
+                                        <div class="col-12 col-md-10">
+                                            <!-- LOWONGAN CARD TITLE -->
+                                            <div class="row">
+                                                <div class="col">
+                                                    <p class="text-danger fw-medium m-0">PT Berkah till Hijrah</p>
+                                                    <h3>Supervisor</h3>
+                                                </div>
+                                                <div class="col text-end">
+                                                    <div class="btn btn-warning text-light">Apply Now</div>
+                                                </div>
+                                            </div>
+                                            <!-- LOWONGAN CARD DESC -->
+                                            <div class="row mt-3 align-items-center text-secondary">
+                                                <!-- LOKASI -->
+                                                <div class="col-auto d-flex">
+                                                    <i class="fa-regular fa-location-dot me-3"></i>
+                                                    <p class="m-0">Malang Kota</p>
+                                                </div>
+                                                <!-- LOKASI -->
+                                                <div class="col-auto d-flex">
+                                                    <i class="fa-regular fa-clock me-3"></i>
+                                                    <p class="m-0">Full time</p>
+                                                </div>
+                                                <!-- LOKASI -->
+                                                <div class="col-auto d-flex">
+                                                    <i class="fa-regular fa-location-dot me-3"></i>
+                                                    <p class="m-0">4-5 Juta</p>
+                                                </div>
+                                                <!-- LOKASI -->
+                                                <div class="col d-flex">
+                                                    <i class="fa-regular fa-calendar me-3"></i>
+                                                    <p class="m-0">12 Desember 2023</p>
+                                                </div>
+                                            </div>
+                                            <p class="text-secondary mt-3">Kami mencari talent X Bank yang bisa bahasa
+                                                pemrograman PHP dan
+                                                mengerjakan beberapa projek aplikasi syariah. Pekerjaan bisa dihandle
+                                                secara remote dan kami akan memberikan mentor khusus untuk anda yang
+                                                ingin mencoba tantangan ini.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border border-secondary-subtle rounded-3 mt-4">
+                                    <div class="row px-4 py-3">
+                                        <!-- LOWONGAN CARD IMG -->
+                                        <div class="col-12 col-md-2 d-flex">
+                                            <img src="../assets/img/office.png" alt="" class="mx-0 mx-md-auto mt-3"
+                                                style="width: 80px; height: 80px;">
+                                        </div>
+                                        <div class="col-12 col-md-10">
+                                            <!-- LOWONGAN CARD TITLE -->
+                                            <div class="row">
+                                                <div class="col">
+                                                    <p class="text-danger fw-medium m-0">PT Anak Shaleh</p>
+                                                    <h3>Front Office</h3>
+                                                </div>
+                                                <div class="col text-end">
+                                                    <div class="btn btn-warning text-light">Apply Now</div>
+                                                </div>
+                                            </div>
+                                            <!-- LOWONGAN CARD DESC -->
+                                            <div class="row mt-3 align-items-center text-secondary">
+                                                <!-- LOKASI -->
+                                                <div class="col-auto d-flex">
+                                                    <i class="fa-regular fa-location-dot me-3"></i>
+                                                    <p class="m-0">Malang Kota</p>
+                                                </div>
+                                                <!-- LOKASI -->
+                                                <div class="col-auto d-flex">
+                                                    <i class="fa-regular fa-clock me-3"></i>
+                                                    <p class="m-0">Full time</p>
+                                                </div>
+                                                <!-- LOKASI -->
+                                                <div class="col-auto d-flex">
+                                                    <i class="fa-regular fa-location-dot me-3"></i>
+                                                    <p class="m-0">4-5 Juta</p>
+                                                </div>
+                                                <!-- LOKASI -->
+                                                <div class="col d-flex">
+                                                    <i class="fa-regular fa-calendar me-3"></i>
+                                                    <p class="m-0">12 Desember 2023</p>
+                                                </div>
+                                            </div>
+                                            <p class="text-secondary mt-3">Kami mencari talent X Bank yang bisa bahasa
+                                                pemrograman PHP dan
+                                                mengerjakan beberapa projek aplikasi syariah. Pekerjaan bisa dihandle
+                                                secara remote dan kami akan memberikan mentor khusus untuk anda yang
+                                                ingin mencoba tantangan ini.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>
@@ -814,34 +1316,6 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="module">
         AOS.init();
-        // // TRANSPARENT NAV
-        // document.addEventListener('DOMContentLoaded', function () {
-        //     window.addEventListener('scroll', function () {
-        //         var nav = document.querySelector('nav');
-        //         var isScrollPast = window.pageYOffset > 0;
-
-        //         nav.classList.toggle('bg-dark-subtle', isScrollPast);
-        //         nav.classList.toggle('bg-transparent', !isScrollPast);
-        //     });
-        // });
-
-        // KATEGORI
-        const buttonCount = 5;
-
-        for (let i = 1; i <= buttonCount; i++) {
-            const button = document.querySelector(`#link${i}`);
-            const body = document.querySelector(`#linkBody${i}`);
-
-            button.addEventListener('click', () => {
-                for (let j = 1; j <= buttonCount; j++) {
-                    const otherBody = document.querySelector(`#linkBody${j}`);
-                    otherBody.classList.toggle('d-flex', i === j);
-
-                    const otherLink = document.querySelector(`#link${j}`);
-                    otherLink.classList.toggle('n', i === j);
-                }
-            });
-        }
 
         // Swiper JS
         import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs'
@@ -850,7 +1324,7 @@
                 el: ".swiper-pagination",
                 clickable: true,
                 renderBullet: function (index, className) {
-                    return '<span class="' + className + '">' + (index + 1) + "</span>";
+                    return '<div  class="btn btn-warning p-3 ' + className + '">' + (index + 1) + "</div>";
                 },
             },
         });
