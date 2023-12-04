@@ -1,0 +1,366 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X BANK | Cart</title>
+    <!-- FONT AWESOME  CDN-->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-light.css">
+    <!-- AOS LIBRARY CSS CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- SWIPER JS CSS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- BOOTSTRAP CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon">
+    <!-- LOCAL STYLE -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class="overflow-x-hidden">
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar navbar-expand-lg position-fixed w-100 fixed-top bg-light shadow-sm flex-column"
+            style=" transition: all .5s ease;">
+            <div class="container px-4 ">
+                <!-- NAVBAR BRAND-->
+                <a class="navbar-brand d-flex " href="#">
+                    <div class="my-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="49" viewBox="0 0 48 49" fill="none">
+                            <g clip-path="url(#clip0_727_5865)">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M35.6222 15.5916C36.056 15.5202 36.4994 15.6598 36.8154 15.9669C40.4896 19.5395 42.513 24.321 42.513 29.4305C42.513 39.7919 34.0838 48.2217 23.7229 48.2217C15.1523 48.2217 7.67573 42.4192 5.54119 34.1111C5.13671 32.5349 4.93164 30.9602 4.93164 29.4305C4.93164 26.4277 5.63311 23.5411 7.0166 20.8511C8.37813 18.2066 10.3802 15.8909 12.8065 14.1537C12.8206 14.1436 12.8349 14.1338 12.8494 14.1241C12.9388 14.0652 13.0343 13.9953 13.1355 13.9213L13.1458 13.9137C13.156 13.9062 13.1663 13.8987 13.1765 13.8912C13.217 13.8616 13.2575 13.8319 13.2983 13.8026C17.1562 11.0419 19.5792 6.76226 19.9497 2.05822C19.9862 1.59396 20.2528 1.17892 20.6598 0.952538C21.0669 0.72625 21.5599 0.718744 21.9736 0.932522C26.726 3.38879 30.2148 7.76638 31.5453 12.9427C31.95 14.5187 32.155 16.0933 32.155 17.6235C32.155 18.421 32.103 19.2163 31.9997 20.0069C33.0361 18.9125 33.917 17.6744 34.6105 16.3271C34.8121 15.9355 35.1875 15.6626 35.6222 15.5916ZM23.0603 35.3675C26.2442 35.3675 28.8253 32.7864 28.8253 29.6025C28.8253 26.4186 26.2442 23.8375 23.0603 23.8375C19.8763 23.8375 17.2952 26.4186 17.2952 29.6025C17.2952 32.7864 19.8763 35.3675 23.0603 35.3675Z"
+                                    fill="#FFC000" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_727_5865">
+                                    <rect width="47.4444" height="47.4444" fill="white"
+                                        transform="translate(0 0.777344)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h4 class="m-0 fw-semibold ms-2">X BANK<span class="d-block text-warning">UNITY.</h3>
+                </a>
+                <!-- NAVBAR BRAND END-->
+
+                <div class="offcanvas offcanvas-end pe-5" id="offcanvasRight">
+                    <!-- OFFCANVAS HEADER -->
+                    <div class="offcanvas-header p-4">
+                        <a class="navbar-brand d-flex" href="#">
+                            <div class="my-auto">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="49" viewBox="0 0 48 49"
+                                    fill="none">
+                                    <g clip-path="url(#clip0_727_5865)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M35.6222 15.5916C36.056 15.5202 36.4994 15.6598 36.8154 15.9669C40.4896 19.5395 42.513 24.321 42.513 29.4305C42.513 39.7919 34.0838 48.2217 23.7229 48.2217C15.1523 48.2217 7.67573 42.4192 5.54119 34.1111C5.13671 32.5349 4.93164 30.9602 4.93164 29.4305C4.93164 26.4277 5.63311 23.5411 7.0166 20.8511C8.37813 18.2066 10.3802 15.8909 12.8065 14.1537C12.8206 14.1436 12.8349 14.1338 12.8494 14.1241C12.9388 14.0652 13.0343 13.9953 13.1355 13.9213L13.1458 13.9137C13.156 13.9062 13.1663 13.8987 13.1765 13.8912C13.217 13.8616 13.2575 13.8319 13.2983 13.8026C17.1562 11.0419 19.5792 6.76226 19.9497 2.05822C19.9862 1.59396 20.2528 1.17892 20.6598 0.952538C21.0669 0.72625 21.5599 0.718744 21.9736 0.932522C26.726 3.38879 30.2148 7.76638 31.5453 12.9427C31.95 14.5187 32.155 16.0933 32.155 17.6235C32.155 18.421 32.103 19.2163 31.9997 20.0069C33.0361 18.9125 33.917 17.6744 34.6105 16.3271C34.8121 15.9355 35.1875 15.6626 35.6222 15.5916ZM23.0603 35.3675C26.2442 35.3675 28.8253 32.7864 28.8253 29.6025C28.8253 26.4186 26.2442 23.8375 23.0603 23.8375C19.8763 23.8375 17.2952 26.4186 17.2952 29.6025C17.2952 32.7864 19.8763 35.3675 23.0603 35.3675Z"
+                                            fill="#FFC000" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_727_5865">
+                                            <rect width="47.4444" height="47.4444" fill="white"
+                                                transform="translate(0 0.777344)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h4 class="m-0 fw-semibold ms-2 ">X BANK<span class="d-block text-warning">UNITY.
+                                    </h3>
+                        </a>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class=" text-end w-100">
+                        <ul class="navbar-nav gap-3 d-flex fs-6 align-items-center w-100">
+                            <!-- NAVBAR LINKS -->
+                            <li class="nav-item ms-auto">
+                                <a class="nav-link" href="../home">Home</a>
+                            </li>
+                            <li class="nav-item ms-auto ms-lg-0">
+                                <a class="nav-link  " href="../contact/">Contact</a>
+                            </li>
+                            <li class="nav-item ms-auto ms-lg-0">
+                                <a class="nav-link  " href="../about/">About</a>
+                            </li>
+                            <li class="nav-item ms-auto ms-lg-0">
+                                <a class="nav-link" href="../signup/">Sign up</a>
+                            </li>
+                            <li class="nav-item ms-auto">
+                                <div class="input-group ">
+                                    <input type="text" class="form-control" placeholder="What are you looking for?"
+                                        aria-describedby="button-addon2">
+                                    <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i
+                                            class="fa-regular fa-search"></i></button>
+                                </div>
+                            </li>
+                            <li class="nav-item d-flex fs-5 ms-auto mx-lg-auto gap-3">
+                                <a href="" class="nav-link">
+                                    <i class="fa-regular fa-heart"></i>
+                                </a>
+                                <a href="" class="nav-link">
+                                    <i class="fa-regular fa-shopping-cart text-danger"></i>
+                                </a>
+                                <div class="dropdown">
+                                    <div class="nav-link" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-regular fa-user text-dark"></i>
+                                    </div>
+                                    <ul class="dropdown-menu dropdown-menu-end">
+                                        <li><a class="dropdown-item  text-light-emphasis" href="../account/"><i
+                                                    class="fa-regular fa-user me-2"></i> Manage My Account</a></li>
+                                        <li><a class="dropdown-item" href="#"><i
+                                                    class="fa-regular fa-shopping-bag me-2"></i> My Order</a></li>
+                                        <li><a class="dropdown-item" href="#"><i
+                                                    class="fa-regular fa-circle-xmark me-2"></i> My cancellation</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#"><i class="fa-regular fa-star me-2"></i> My
+                                                Review</a></li>
+                                        <li><a class="dropdown-item" href="../"><i
+                                                    class="fa-regular fa-arrow-right-from-bracket fa-flip-horizontal me-2"></i>
+                                                Log Out</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <!-- NAVBAR END -->
+    <!-- BARANG -->
+    <section>
+        <div class="container mt-5 pt-5">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../home/" class="nav-link">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Cart</li>
+                </ol>
+            </nav>
+            <div class="mt-5">
+                <table class="table table-borderless">
+                    <thead>
+                        <tr>
+                            <th scope="col">Product</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td scope="row"><img src="../assets/img/Cart1.png" alt="" style="width: 60px;"> Jaket Dingin
+                            </td>
+                            <td>$129.00</td>
+                            <td><input type="number" name="" id=""></td>
+                            <td>$129.00</td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><img src="../assets/img/Cart1.png" alt="" style="width: 60px;"> Jaket Dingin
+                            </td>
+                            <td>$129.00</td>
+                            <td><input type="number" name="" id=""></td>
+                            <td>$129.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="d-flex justify-content-between mt-4">
+                <a href="" class="btn btn-outline-dark">Return To Shop</a>
+                <a href="" class="btn btn-outline-dark">Update Cart</a>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12 col-lg-6">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 w-auto" type="search" placeholder="Coupon Code"
+                            aria-label="Search">
+                        <button class="btn btn-danger" type="submit">Apply Coupon</button>
+                    </form>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="border border-dark rounded-3 px-3 py-4">
+                        <h6>Cart Total</h6><br>
+                        <div class="d-flex justify-content-between">
+                            <p>Subtotal :</p>  
+                            <p>$ 1209.00</p>
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-between">
+                            <p>Shipping :</p>  
+                            <p>Free</p>
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-between">
+                            <p>Total :</p>  
+                            <p>$ 1209.00</p>
+                        </div>
+                        <div class="d-flex mt-4">
+                            <a href="" class="btn btn-danger mx-auto py-2 px-4">Procees to checkout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- BARANG END-->
+    <!-- FOOTER -->
+    <footer class="bg-dark text-light ">
+        <div class="container mt-5 pt-5">
+            <div class="row gap-4">
+                <div class="col-12  col-lg-2">
+                    <h4>Exclusive</h4>
+                    <h6 class="mt-3">Subscibe</h6>
+                    <p class="mt-3">Get 10% off your first order</p>
+                    <div class="input-group mb-3 ">
+                        <input type="email" class="form-control" placeholder="Enter Your Email"
+                            aria-describedby="button-addon2">
+                        <button class="btn btn-outline-secondary bg-dark" type="button" id="button-addon2"><i
+                                class="fa-regular fa-paper-plane-top"></i></button>
+                    </div>
+                </div>
+                <div class="col-12  col-lg-2">
+                    <h4>Support</h4>
+                    <p>111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</p>
+                    <p>exclusive@gmail.com</p>
+                    <p>+88015-88888-9999</p>
+                </div>
+                <div class="col-12  col-lg-2">
+                    <h4>Account</h4>
+                    <a href="#" class="nav-link mt-3">My Account</a>
+                    <a href="#" class="nav-link mt-3">Login / Register</a>
+                    <a href="#" class="nav-link mt-3">Cart</a>
+                    <a href="#" class="nav-link mt-3">Wishlist</a>
+                    <a href="#" class="nav-link mt-3">Shop</a>
+                </div>
+                <div class="col-12  col-lg-2">
+                    <h4>Quick Link</h4>
+                    <a href="#" class="nav-link mt-3">Privacy Policy</a>
+                    <a href="#" class="nav-link mt-3">Terms Of Use</a>
+                    <a href="#" class="nav-link mt-3">FAQ</a>
+                    <a href="#" class="nav-link mt-3">Contact</a>
+                </div>
+                <div class="col-12  col-lg-2">
+                    <h4>Download App</h4>
+                    <p class="mt-3 ">Save $3 with App New User Only</p>
+                    <div class="row">
+                        <div class="col">
+                            <img src="../assets/img/qrcode.png" alt="" class="w-100">
+                        </div>
+                        <div class="col ">
+                            <a href="">
+                                <div class="row">
+                                    <img src="../assets/img/googleplay.png" alt="">
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="row mt-4">
+                                    <img src="../assets/img/appstore.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="d-flex mt-4 gap-4 fs-5">
+                        <a href="" class="nav-link">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="" class="nav-link">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="" class="nav-link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="" class="nav-link">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <p class="text-dark-emphasis text-center mt-5 mb-0 pb-3">©️ Copyright IzzulAverroes 2022. All right reserved
+            </p>
+        </div>
+    </footer>
+    <!-- FOOTER END-->
+    <!-- BOOTSTRAP JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <!-- AOS LIBRARY JS CDN-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="module">
+        AOS.init();
+
+        // Swiper JS
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs'
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+        var swiper2 = new Swiper(".mySwiper2", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1100: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+                1120: {
+                    slidesPerView: 4,
+                    spaceBetween: 50,
+                },
+            },
+        });
+        var swiper3 = new Swiper(".mySwiper3", {
+            slidesPerView: 1,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                992: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                },
+                1120: {
+                    slidesPerView: 6,
+                    spaceBetween: 50,
+                },
+            },
+        });
+    </script>
+</body>
+
+</html>

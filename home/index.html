@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-light.css">
     <!-- AOS LIBRARY CSS CDN -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- LOCAL STYLE -->
-    <link rel="stylesheet" href="../assets/css/style.css">
     <!-- SWIPER JS CSS CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <!-- BOOTSTRAP CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon">
+    <!-- LOCAL STYLE -->
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body class="overflow-x-hidden">
@@ -101,9 +101,25 @@
                                 <a href="" class="nav-link">
                                     <i class="fa-regular fa-shopping-cart "></i>
                                 </a>
-                                <a href="" class="nav-link">
-                                    <i class="fa-regular fa-user m-auto"></i>
-                                </a>
+                                <div class="dropdown">
+                                    <div class="nav-link" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-regular fa-user text-dark"></i>
+                                    </div>
+                                    <ul class="dropdown-menu dropdown-menu-end">
+                                        <li><a class="dropdown-item  text-light-emphasis" href="../account/"><i
+                                                    class="fa-regular fa-user me-2"></i> Manage My Account</a></li>
+                                        <li><a class="dropdown-item" href="#"><i
+                                                    class="fa-regular fa-shopping-bag me-2"></i> My Order</a></li>
+                                        <li><a class="dropdown-item" href="#"><i
+                                                    class="fa-regular fa-circle-xmark me-2"></i> My cancellation</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#"><i class="fa-regular fa-star me-2"></i> My
+                                                Review</a></li>
+                                        <li><a class="dropdown-item" href="#"><i
+                                                    class="fa-regular fa-arrow-right-from-bracket fa-flip-horizontal me-2"></i>
+                                                Log Out</a></li>
+                                    </ul>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -122,7 +138,8 @@
         <div class="container">
             <div class="row mt-3">
                 <!-- MENU -->
-                <div class="col-12 col-md-3 border-end border-2  mt-5 pt-5">
+                <div class="col-12 col-md-3 border-end border-2 mt-5 pt-5" data-aos="fade-right"
+                    data-aos-duration="1000" data-aos-delay="200" data-aos-once="true">
                     <!-- WOMEN -->
                     <div class="btn-group dropend w-100 mb-2">
                         <div type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
@@ -155,12 +172,13 @@
                     <a href="" class="nav-link mb-2">Health & Beauty</a>
                 </div>
                 <!-- PROMO HEADER -->
-                <div class="col-12 col-md-9  mt-5 pt-5">
+                <div class="col-12 col-md-9  mt-5 pt-5" data-aos="fade-left" data-aos-duration="1000"
+                    data-aos-delay="200"  data-aos-once="true">
                     <div class="swiper mySwiper mx-4">
                         <div class="swiper-wrapper">
                             <!-- SLIDE 1 -->
                             <div class="swiper-slide">
-                                <div class="bg-black text-light px-5 py-4">
+                                <div class="bg-black text-light px-5 py-5">
                                     <div class="row">
                                         <div class="col-12 col-lg-6 d-flex">
                                             <div class="my-auto">
@@ -181,7 +199,7 @@
                             </div>
                             <!-- SLIDE 2 -->
                             <div class="swiper-slide">
-                                <div class="bg-black text-light px-5 py-4">
+                                <div class="bg-black text-light px-5 py-5">
                                     <div class="row">
                                         <div class="col-12 col-lg-6 d-flex">
                                             <div class="my-auto">
@@ -202,7 +220,7 @@
                             </div>
                             <!-- SLIDE 3 -->
                             <div class="swiper-slide">
-                                <div class="bg-black text-light px-5 py-4">
+                                <div class="bg-black text-light px-5 py-5">
                                     <div class="row">
                                         <div class="col-12 col-lg-6 d-flex">
                                             <div class="my-auto">
@@ -297,7 +315,7 @@
                                     <a href="#" class="nav-link">
                                         <div class="overlay">
                                             <div class="text-center">
-                                                <p class="fs-6 fw-bold mt-2 text-light">Add To Card</p>
+                                                <p class="fs-6 fw-bold mt-2 text-light">Add To Cart</p>
                                             </div>
                                         </div>
                                     </a>
@@ -337,7 +355,7 @@
                                     <a href="#" class="nav-link">
                                         <div class="overlay">
                                             <div class="text-center">
-                                                <p class="fs-6 fw-bold mt-2 text-light">Add To Card</p>
+                                                <p class="fs-6 fw-bold mt-2 text-light">Add To Cart</p>
                                             </div>
                                         </div>
                                     </a>
@@ -377,7 +395,7 @@
                                     <a href="#" class="nav-link">
                                         <div class="overlay">
                                             <div class="text-center">
-                                                <p class="fs-6 fw-bold mt-2 text-light">Add To Card</p>
+                                                <p class="fs-6 fw-bold mt-2 text-light">Add To Cart</p>
                                             </div>
                                         </div>
                                     </a>
@@ -417,7 +435,7 @@
                                     <a href="#" class="nav-link">
                                         <div class="overlay">
                                             <div class="text-center">
-                                                <p class="fs-6 fw-bold mt-2 text-light">Add To Card</p>
+                                                <p class="fs-6 fw-bold mt-2 text-light">Add To Cart</p>
                                             </div>
                                         </div>
                                     </a>
@@ -457,7 +475,7 @@
                                     <a href="#" class="nav-link">
                                         <div class="overlay">
                                             <div class="text-center">
-                                                <p class="fs-6 fw-bold mt-2 text-light">Add To Card</p>
+                                                <p class="fs-6 fw-bold mt-2 text-light">Add To Cart</p>
                                             </div>
                                         </div>
                                     </a>
@@ -497,7 +515,7 @@
                                     <a href="#" class="nav-link">
                                         <div class="overlay">
                                             <div class="text-center">
-                                                <p class="fs-6 fw-bold mt-2 text-light">Add To Card</p>
+                                                <p class="fs-6 fw-bold mt-2 text-light">Add To Cart</p>
                                             </div>
                                         </div>
                                     </a>
@@ -519,8 +537,9 @@
                     </div>
                 </div>
             </div>
-            <a href="" class="btn btn-danger px-5 py-2">View All Products</a>
-            <hr class="mt-5">
+            <a href="" class="btn btn-danger px-5 py-2" data-aos="fade-down" data-aos-duration="1000"
+                data-aos-delay="200"  data-aos-once="true">View All Products</a>
+            <hr class="mt-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-once="true">
         </div>
     </section>
     <!-- TODAY END -->
@@ -529,53 +548,53 @@
         <div class="container">
             <!-- PALING DICARI -->
             <div class="text-start rounded-1 py-2 mt-5" style="border-left: 16px red solid;" data-aos="fade-right"
-                data-aos-duration="1000" data-aos-delay="600" data-aos-once="true">
+                data-aos-duration="1000" data-aos-delay="200" data-aos-once="true">
                 <p class="fw-bold fs-5 text-danger ms-3 mb-0">Categories</p>
             </div>
             <!-- FLASH SALES -->
             <div class="text-start mt-4 d-flex">
-                <h2 class="m-0" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100"
+                <h2 class="m-0" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400"
                     data-aos-once="true">
                     Browse By Category</h2>
             </div>
             <div class="swiper mySwiper3 mt-4 h-50">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-once="true">
                         <a href="#"
                             class="card text-center p-4 d-flex flex-column justify-content-center btn btn-outline-danger">
                             <i class="fa-regular fa-mobile-android fs-1"></i>
                             <p class="m-0 mt-3">Phones</p>
                         </a>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">
                         <a href="#"
                             class="card text-center p-4 d-flex flex-column justify-content-center btn btn-outline-danger">
                             <i class="fa-regular fa-desktop  fs-1"></i>
                             <p class="m-0 mt-3">Computers</p>
                         </a>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-once="true">
                         <a href="#"
                             class="card text-center p-4 d-flex flex-column justify-content-center btn btn-outline-danger">
                             <i class="fa-light fa-watch-smart fs-1"></i>
                             <p class="m-0 mt-3">Smartwatch</p>
                         </a>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" data-aos-once="true">
                         <a href="#"
                             class="card text-center p-4 d-flex flex-column justify-content-center btn btn-outline-danger">
                             <i class="fa-regular fa-camera fs-1"></i>
                             <p class="m-0 mt-3">Cameras</p>
                         </a>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" data-aos-once="true">
                         <a href="#"
                             class="card text-center p-4 d-flex flex-column justify-content-center btn btn-outline-danger">
                             <i class="fa-regular fa-headphones fs-1"></i>
                             <p class="m-0 mt-3">HeadPhones</p>
                         </a>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700" data-aos-once="true">
                         <a href="#"
                             class="card text-center p-4 d-flex flex-column justify-content-center btn btn-outline-danger">
                             <i class="fa-regular fa-gamepad fs-1"></i>
@@ -594,15 +613,15 @@
         <div class="container pt-4">
             <!-- PALING DICARI -->
             <div class="text-start rounded-1 py-2 mt-5" style="border-left: 16px red solid;" data-aos="fade-right"
-                data-aos-duration="1000" data-aos-delay="600" data-aos-once="true">
+                data-aos-duration="1000" data-aos-delay="400" data-aos-once="true">
                 <p class="fw-bold fs-5 text-danger ms-3 mb-0">This Month</p>
             </div>
             <!-- FLASH SALES -->
             <div class="text-start mt-4 d-flex justify-content-between">
-                <h2 class="m-0" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100"
+                <h2 class="m-0" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600"
                     data-aos-once="true">
                     Best Selling Products</h2>
-                <a href="" class="btn btn-danger px-4 py-2">View All</a>
+                <a href="" class="btn btn-danger px-4 py-2" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200"  data-aos-once="true">View All</a>
             </div>
             <div class="mt-5 ">
                 <div class="swiper mySwiper2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"
@@ -629,7 +648,7 @@
                                     <a href="#" class="nav-link">
                                         <div class="overlay">
                                             <div class="text-center">
-                                                <p class="fs-6 fw-bold mt-2 text-light">Add To Card</p>
+                                                <p class="fs-6 fw-bold mt-2 text-light">Add To Cart</p>
                                             </div>
                                         </div>
                                     </a>
@@ -669,7 +688,7 @@
                                     <a href="#" class="nav-link">
                                         <div class="overlay">
                                             <div class="text-center">
-                                                <p class="fs-6 fw-bold mt-2 text-light">Add To Card</p>
+                                                <p class="fs-6 fw-bold mt-2 text-light">Add To Cart</p>
                                             </div>
                                         </div>
                                     </a>
@@ -709,7 +728,7 @@
                                     <a href="#" class="nav-link">
                                         <div class="overlay">
                                             <div class="text-center">
-                                                <p class="fs-6 fw-bold mt-2 text-light">Add To Card</p>
+                                                <p class="fs-6 fw-bold mt-2 text-light">Add To Cart</p>
                                             </div>
                                         </div>
                                     </a>
@@ -749,7 +768,7 @@
                                     <a href="#" class="nav-link">
                                         <div class="overlay">
                                             <div class="text-center">
-                                                <p class="fs-6 fw-bold mt-2 text-light">Add To Card</p>
+                                                <p class="fs-6 fw-bold mt-2 text-light">Add To Cart</p>
                                             </div>
                                         </div>
                                     </a>
@@ -789,7 +808,7 @@
                                     <a href="#" class="nav-link">
                                         <div class="overlay">
                                             <div class="text-center">
-                                                <p class="fs-6 fw-bold mt-2 text-light">Add To Card</p>
+                                                <p class="fs-6 fw-bold mt-2 text-light">Add To Cart</p>
                                             </div>
                                         </div>
                                     </a>
@@ -829,7 +848,7 @@
                                     <a href="#" class="nav-link">
                                         <div class="overlay">
                                             <div class="text-center">
-                                                <p class="fs-6 fw-bold mt-2 text-light">Add To Card</p>
+                                                <p class="fs-6 fw-bold mt-2 text-light">Add To Cart</p>
                                             </div>
                                         </div>
                                     </a>
@@ -857,7 +876,7 @@
     <!-- EXHANCE -->
     <section>
         <div class="container">
-            <div class="row p-5" style="background: url(../assets/img/jblbackground.png);background-size: cover;">
+            <div class="row p-5" style="background: url(../assets/img/jblbackground.png);background-size: cover;" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-once="true">
                 <div class="col-12 col-md-6">
                     <p class="fw-medium" style="color: #0F6;">Categories</p>
                     <h1 class="text-white display-3 fw-medium">Enhance Your <br>Music Experience</h1>
@@ -907,12 +926,12 @@
         <div class="container pt-4">
             <!-- PALING DICARI -->
             <div class="text-start rounded-1 py-2 mt-5" style="border-left: 16px red solid;" data-aos="fade-right"
-                data-aos-duration="1000" data-aos-delay="600" data-aos-once="true">
+                data-aos-duration="1000" data-aos-delay="200" data-aos-once="true">
                 <p class="fw-bold fs-5 text-danger ms-3 mb-0">Our Product</p>
             </div>
             <!-- FLASH SALES -->
             <div class="text-start mt-4 d-flex justify-content-between">
-                <h2 class="m-0" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100"
+                <h2 class="m-0" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400"
                     data-aos-once="true">
                     Explore Our Product</h2>
             </div>
@@ -941,7 +960,7 @@
                                     <a href="#" class="nav-link">
                                         <div class="overlay">
                                             <div class="text-center">
-                                                <p class="fs-6 fw-bold mt-2 text-light">Add To Card</p>
+                                                <p class="fs-6 fw-bold mt-2 text-light">Add To Cart</p>
                                             </div>
                                         </div>
                                     </a>
@@ -981,7 +1000,7 @@
                                     <a href="#" class="nav-link">
                                         <div class="overlay">
                                             <div class="text-center">
-                                                <p class="fs-6 fw-bold mt-2 text-light">Add To Card</p>
+                                                <p class="fs-6 fw-bold mt-2 text-light">Add To Cart</p>
                                             </div>
                                         </div>
                                     </a>
@@ -1021,7 +1040,7 @@
                                     <a href="#" class="nav-link">
                                         <div class="overlay">
                                             <div class="text-center">
-                                                <p class="fs-6 fw-bold mt-2 text-light">Add To Card</p>
+                                                <p class="fs-6 fw-bold mt-2 text-light">Add To Cart</p>
                                             </div>
                                         </div>
                                     </a>
@@ -1061,7 +1080,7 @@
                                     <a href="#" class="nav-link">
                                         <div class="overlay">
                                             <div class="text-center">
-                                                <p class="fs-6 fw-bold mt-2 text-light">Add To Card</p>
+                                                <p class="fs-6 fw-bold mt-2 text-light">Add To Cart</p>
                                             </div>
                                         </div>
                                     </a>
@@ -1106,7 +1125,7 @@
                                     <a href="#" class="nav-link">
                                         <div class="overlay">
                                             <div class="text-center">
-                                                <p class="fs-6 fw-bold mt-2 text-light">Add To Card</p>
+                                                <p class="fs-6 fw-bold mt-2 text-light">Add To Cart</p>
                                             </div>
                                         </div>
                                     </a>
@@ -1146,7 +1165,7 @@
                                     <a href="#" class="nav-link">
                                         <div class="overlay">
                                             <div class="text-center">
-                                                <p class="fs-6 fw-bold mt-2 text-light">Add To Card</p>
+                                                <p class="fs-6 fw-bold mt-2 text-light">Add To Cart</p>
                                             </div>
                                         </div>
                                     </a>
@@ -1186,7 +1205,7 @@
                                     <a href="#" class="nav-link">
                                         <div class="overlay">
                                             <div class="text-center">
-                                                <p class="fs-6 fw-bold mt-2 text-light">Add To Card</p>
+                                                <p class="fs-6 fw-bold mt-2 text-light">Add To Cart</p>
                                             </div>
                                         </div>
                                     </a>
@@ -1226,7 +1245,7 @@
                                     <a href="#" class="nav-link">
                                         <div class="overlay">
                                             <div class="text-center">
-                                                <p class="fs-6 fw-bold mt-2 text-light">Add To Card</p>
+                                                <p class="fs-6 fw-bold mt-2 text-light">Add To Cart</p>
                                             </div>
                                         </div>
                                     </a>
@@ -1248,7 +1267,7 @@
                     </div>
                 </div>
             </div>
-            <div class="d-flex">
+            <div class="d-flex" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-once="true">
                 <a href="" class="btn btn-danger px-4 py-2 mx-auto">View All product</a>
             </div>
         </div>
@@ -1260,17 +1279,17 @@
         <div class="container">
             <!-- PALING DICARI -->
             <div class="text-start rounded-1 py-2 mt-5" style="border-left: 16px red solid;" data-aos="fade-right"
-                data-aos-duration="1000" data-aos-delay="600" data-aos-once="true">
+                data-aos-duration="1000" data-aos-delay="200" data-aos-once="true">
                 <p class="fw-bold fs-5 text-danger ms-3 mb-0">Featured</p>
             </div>
             <!-- FLASH SALES -->
             <div class="text-start mt-4 d-flex justify-content-between">
-                <h2 class="m-0" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100"
+                <h2 class="m-0" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400"
                     data-aos-once="true">
                     New Arrival</h2>
             </div>
             <div class="row mt-5">
-                <div class="col-12 col-lg-6 mb-3 mb-lg-0 ">
+                <div class="col-12 col-lg-6 mb-3 mb-lg-0 " data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200" data-aos-once="true">
                     <div class="w-100 h-100 rounded-3 text-light d-flex flex-column px-5 py-4 ratio-1x1 pt-5"
                         style="background: url(../assets/img/ps.png); background-size: cover;">
                         <div class="pt-5 pt-lg-0 mt-5 mt-lg-0">
@@ -1281,7 +1300,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-6">
-                    <div class="row p-2 pt-0">
+                    <div class="row p-2 pt-0" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-once="true">
                         <div class="w-100 h-100 rounded-3 text-light d-flex flex-column px-5 py-4 ratio-1x1 pt-5"
                             style="background: url(../assets/img/collection.png); background-size: cover;">
                             <h3 class=" mt-5 pt-5">Women's Collection</h3>
@@ -1290,23 +1309,23 @@
                         </div>
                     </div>
                     <div class="row mt-3">
-                        <div class="col">
+                        <div class="col" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="700" data-aos-once="true">
                             <div class="w-100 h-100 rounded-3 text-light d-flex flex-column px-4 py-4 ratio-1x1 pt-5"
                                 style="background: url(../assets/img/speaker.png); background-size: cover;">
                                 <h3 class=" mt-5 pt-5">Speaker</h3>
                                 <p class="">Amazon wireless speakers.</p>
                                 <a href="" class="nav-link fw-medium">Shop Now</a>
                             </div>
-                            
+
                         </div>
-                        <div class="col">
+                        <div class="col" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800" data-aos-once="true">
                             <div class="w-100 h-100 rounded-3 text-light d-flex flex-column px-4 py-4 ratio-1x1 pt-5"
                                 style="background: url(../assets/img/perfume.png); background-size: cover;">
                                 <h3 class=" mt-5 pt-5">Perfume</h3>
                                 <p class="">GUCCI INTENSE OUD EDP.</p>
                                 <a href="" class="nav-link fw-medium">Shop Now</a>
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -1315,20 +1334,20 @@
     </section>
     <!-- NEW ARRIVAL END-->
     <!-- FAST -->
-    <section>
-        <div class="container mt-5 pt-5">
+    <section class="py-5">
+        <div class="container my-5 py-5">
             <div class="row justify-content-evenly row-gap-4">
-                <div class="col-auto d-flex flex-column text-center">
+                <div class="col-auto d-flex flex-column text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"  data-aos-once="true">
                     <img src="../assets/img/delivery.png" alt="" class="mx-auto" width="100">
                     <h5 class="mt-3">FREE AND FAST DELIVERY</h5>
                     <p class="mt-2">Free delivery for all orders over $140</p>
                 </div>
-                <div class="col-auto d-flex flex-column text-center">
+                <div class="col-auto d-flex flex-column text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"  data-aos-once="true">
                     <img src="../assets/img/services.png" alt="" class="mx-auto" width="100">
                     <h5 class="mt-3">24 / 7 CUSTOMER SERVICES</h5>
                     <p class="mt-2">Friendly 24/7 customer support</p>
                 </div>
-                <div class="col-auto d-flex flex-column text-center">
+                <div class="col-auto d-flex flex-column text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"  data-aos-once="true">
                     <img src="../assets/img/guarantee.png" alt="" class="mx-auto" width="100">
                     <h5 class="mt-3">MONEY BACK GUARANTY</h5>
                     <p class="mt-2">We reurn money within 30 days</p>
@@ -1340,7 +1359,7 @@
     <!-- FOOTER -->
     <footer class="bg-dark text-light ">
         <div class="container mt-5 pt-5">
-            <div class="row gap-5">
+            <div class="row gap-4">
                 <div class="col-12  col-lg-2">
                     <h4>Exclusive</h4>
                     <h6 class="mt-3">Subscibe</h6>
